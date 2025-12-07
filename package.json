@@ -1,8 +1,8 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "react-token",
+  "version": "0.1.0",
+  "homepage": "https://ibadullah-18.github.io/react-token",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
