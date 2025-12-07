@@ -1,0 +1,10 @@
+{
+  "welcomeTitle": "Welcome Back",
+  "welcomeSubtitle": "Sign in to continue shopping",
+  "loginButton": "Login",
+  "emailPlaceholder": "Email",
+  "passwordPlaceholder": "Password",
+  "forgotPassword": "Forgot password?",
+  "noAccount": "Don’t have an account?",
+  "signUp": "Sign Up"
+}

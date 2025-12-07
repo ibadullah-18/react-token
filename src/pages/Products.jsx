@@ -2,8 +2,12 @@ import Card from "../components/Card"
 import { useState, useEffect } from "react"
 import { useDarkmode } from "../stores/darkmodeStore"
 import api from "../utils/axios"
+import { useTranslation } from "react-i18next"
+import LanguageSelector from "./LanguageSelector"
 
 const Products = () => {
+    
+    const {t} = useTranslation()
     const { isDarkmodeActive, toggleDarkmode } = useDarkmode()
     const [searchterm, setSearchterm] = useState("")
     const [products, setProducts] = useState([])
@@ -26,11 +30,13 @@ const Products = () => {
 
     return (
         <div className={`${isDarkmodeActive ? "bg-slate-900 text-white" : "bg-white text-black"} transition-all duration-200`}>
+            <h1 className="m-5 text-[24px]">{t("welcomeTitle")}</h1>
             <div className="w-full flex justify-center py-5">
                 <input className={`border border-zinc-300 p-3 min-w-[300px]`} placeholder="Search for any product.." type="text" value={searchterm} onChange={(e) => {
                     setSearchterm(e.target.value)
                 }} />
                 <button onClick={toggleDarkmode} className="bg-red-600 text-white px-2 hover:cursor-pointer hover:bg-red-700">{isDarkmodeActive ? "Disable" : "Enable"} Darkmode</button>
+                <LanguageSelector />
             </div>
             <div className="w-full min-h-screen h-fit grid grid-cols-4 gap-5 p-5">
                 {products.map(product => <Card key={product._id} product={product} />)}

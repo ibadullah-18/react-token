@@ -1,3 +1,4 @@
+import "./locales/i18n.js"
 import Loading from "./components/Loading"
 import Navigator from "./components/Navigator"
 import { useTokens } from "./stores/tokenStore"

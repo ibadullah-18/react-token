@@ -1,0 +1,10 @@
+{
+  "welcomeTitle": "С возвращением",
+  "welcomeSubtitle": "Войдите, чтобы продолжить покупки",
+  "loginButton": "Войти",
+  "emailPlaceholder": "Email",
+  "passwordPlaceholder": "Пароль",
+  "forgotPassword": "Забыли пароль?",
+  "noAccount": "Нет аккаунта?",
+  "signUp": "Регистрация"
+}
